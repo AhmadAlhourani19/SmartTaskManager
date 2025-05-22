@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 function TaskForm({ onTaskCreated }) {
   const [title, setTitle] = useState('');
   const [priority, setPriority] = useState('LOW');
-  const [dueDate, setDueDate] = useState(''); // NEW
+  const [dueDate, setDueDate] = useState(''); 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -13,7 +13,7 @@ function TaskForm({ onTaskCreated }) {
     onTaskCreated(newTask);
     setTitle('');
     setPriority('LOW');
-    setDueDate(''); // Reset field
+    setDueDate('');
   };
 
   return (
